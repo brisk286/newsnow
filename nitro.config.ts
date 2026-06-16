@@ -42,7 +42,7 @@ if (process.env.VERCEL) {
   //   },
   // }
 } else if (process.env.CF_PAGES) {
-  nitroOption.preset = "cloudflare-worker"
+  nitroOption.preset = "cloudflare-pages"
   nitroOption.unenv = {
     alias: {
       "safer-buffer": "node:buffer",
